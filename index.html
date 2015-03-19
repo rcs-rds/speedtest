@@ -60,40 +60,6 @@
 <!-- Button trigger modal -->
         <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Data Resetare Trafic</a></li>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Calculator data resetare trafic internet Digi Mobil</h4>
-      </div>
-      <div class="modal-body">
-
-<form class="form-inline">
-  <div class="form-group">
-    <label class="control-label" for="InputAmount">Introduceti ultimele 3 cifre ale nr. de telefon: </label>
-    <label class="sr-only" for="exampleInputAmount">Amount (numar telefon)</label>
-    <div class="input-group">
-      <input type="text" size="4" maxlength="3" class="form-control" id="nr" placeholder="123">
-      <span class="input-group-btn">
-        <input type="button" value="Afisare data" class="btn btn-default" type="button" onclick="onCalculate('nr','re')"></button>
-      </span>
-    </div>
-  </div>
-</form>
-    <label class="control-label" for="InputAmount">Resetarea traficului are loc pe data de: <span class="badge"><font size="3"><span id="re">...</span></font></span></a>
-<SCRIPT src="js/trafic/trafic.js" type="text/javascript"></SCRIPT>
-
-      </div>
-      <div class="modal-footer">
-        <a href="#" onclick="window.location.reload(true); return false;"><button type="button" class="btn btn-danger" onClick="window.location.reload(true)" data-loading-text="Resetting" autocomplete="off"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</button></a>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <!-- //inactive button//
       <form class="navbar-form navbar-left" role="button">
@@ -153,6 +119,41 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Calculator data resetare trafic internet Digi Mobil</h4>
+      </div>
+      <div class="modal-body">
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="control-label" for="InputAmount">Introduceti ultimele 3 cifre ale nr. de telefon: </label>
+    <label class="sr-only" for="exampleInputAmount">Amount (numar telefon)</label>
+    <div class="input-group">
+      <input type="text" size="4" maxlength="3" class="form-control" id="nr" placeholder="123">
+      <span class="input-group-btn">
+        <input type="button" value="Afisare data" class="btn btn-default" type="button" onclick="onCalculate('nr','re')"></button>
+      </span>
+    </div>
+  </div>
+</form>
+    <label class="control-label" for="InputAmount">Resetarea traficului are loc pe data de: <span class="badge"><font size="3"><span id="re">...</span></font></span></a>
+<SCRIPT src="js/trafic/trafic.js" type="text/javascript"></SCRIPT>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" onclick="window.location.reload(true); return false;"><button type="button" class="btn btn-danger" onClick="window.location.reload(true)" data-loading-text="Resetting" autocomplete="off"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</button></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="container">
@@ -315,7 +316,7 @@
   	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  	  ga('create', 'UA-58684985-1', 'auto');
+  	  ga('create', 'UA-58684985-4', 'auto');
   	  ga('send', 'pageview');
 	</script>
 
