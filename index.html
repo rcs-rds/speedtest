@@ -112,7 +112,7 @@
  <!-- IPv6-test.com widget END -->
 
             <li class="divider"></li>
-            <li><a href="#" onclick="window.location.reload(true); return false;"><div style="text-align://center//"><button type="button" class="btn btn-primary btn-success" onClick="window.location.reload(true)" data-loading-text="Reloading"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reload page</button></div></a></li>
+            <li><!-- <a href="#" onclick="window.location.reload(true); return false;"> --><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button type="button" class="btn btn-primary btn-success" onClick="window.location.reload(true)" data-loading-text="Reloading"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reload page</button></div><!-- </a> --></li>
           </ul>
         </li>
       </ul>
@@ -143,12 +143,12 @@
     </div>
   </div>
  </form>
-    <label class="control-label" for="InputAmount">Resetarea traficului are loc pe data de: <span class="badge"><span id="re" style="font-size:1.4em; color:white;">...</span></span></label>
+    <label class="control-label" for="InputAmount">Resetarea traficului are loc pe data de: <span class="badge"><span id="re" style="font-size:1.4em; color:white">...</span></span></label>
  <SCRIPT src="js/trafic/trafic.js" type="text/javascript"></SCRIPT>
 
       </div><!-- /.modal-body -->
       <div class="modal-footer">
-        <a href="#" onclick="window.location.reload(true); return false;"><button type="button" class="btn btn-danger" onClick="window.location.reload(true)" data-loading-text="Resetting"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</button></a>
+        <!-- <a href="#" onclick="window.location.reload(true); return false;"> --><button type="button" class="btn btn-danger" onClick="window.location.reload(true)" data-loading-text="Resetting"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</button><!-- </a> -->
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div><!-- /.modal-content -->
@@ -159,10 +159,10 @@
         <br>
 
 
-<div class="container"> <!-- Options: container or container-fluid -->
+<div class="container" style="font-size:92.7%; color:; font-family:tahoma"> <!-- Options: container or container-fluid; font-size: 0.92em or 92%/92.7%/93% or 12.9px -->
  <div class="panel panel-default">
   <div class="panel-body">
-    <font size="2" face="tahoma">
+    <!-- //obsolete element// <font size="2" face="tahoma"> -->
     <!-- //remove// <span style="color:#2F2F2F"> -->
     <!-- //no longer needed// <p class="heading"> -->
     <br>
@@ -231,6 +231,7 @@
               <a href="http://www.rcs-rds.ro/internet-digi-net/testeaza-ti-viteza" target="_blank" class="btn btn-success btn-xs">Mirror</a>
             </td>
           </tr>
+          <tr>
             <td><strong>Iasi</strong></td>
             <td><span style="color: #0099ff">Digi Net</span></td>
             <td>IPv4</td>
@@ -240,6 +241,7 @@
               <a href="http://www.rcs-rds.ro/internet-digi-net/testeaza-ti-viteza" target="_blank" class="btn btn-success btn-xs">Mirror</a>
             </td>
           </tr>
+          <tr>
             <td><strong>Dunaujvaros (HU)</strong></td>
             <td><span style="color: #0099ff">Digi Net</span></td>
             <td>IPv4</td>
@@ -252,8 +254,9 @@
         </tbody>
       </table><!-- /.table -->
 
-        <center><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseList1" aria-expanded="false" aria-controls="collapseList1" data-toggle="tooltip" data-placement="bottom" title="Toggle server list">
-          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Removed Servers
+        <center><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseList1" aria-expanded="false" aria-controls="collapseList1" title="Toggle server list">
+          <!-- <span data-toggle="tooltip" data-placement="right" title="Toggle server list"> -->
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Removed Servers<!-- </span> -->
         </button></center>
     <div class="collapse" id="collapseList1">
       <table class="table table-striped table-hover table-condensed table-responsive"> <!-- Other options: table-bordered, table-condensed -->
@@ -411,6 +414,7 @@
               <a target="_blank" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="No mirror available">Mirror</a>
             </td>
           </tr>
+          <tr>
             <td><strong>Iasi [RO]</strong></td>
             <td><span style="color: #0099ff">RCS&amp;RDS</span></td>
             <td>IPv4</td>
@@ -421,6 +425,7 @@
               <a href="http://iasi.speedtest.net/" target="_blank" class="btn btn-success btn-xs">Mirror</a><br>
             </td>
           </tr>
+          <tr>
             <td><strong>Dunaujvaros [HU]</strong></td>
             <td><span style="color: #0099ff">Digi Kft</span></td>
             <td>IPv4</td>
@@ -434,8 +439,9 @@
         </tbody>
       </table><!-- /.table -->
 
-        <center><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseList2" aria-expanded="false" aria-controls="collapseList2" data-toggle="tooltip" data-placement="bottom" title="Toggle server list">
-          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Removed Servers
+        <center><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseList2" aria-expanded="false" aria-controls="collapseList2" title="Toggle server list">
+          <!-- <span data-toggle="tooltip" data-placement="right" title="Toggle server list"> -->
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Removed Servers<!-- </span> -->
         </button></center>
     <div class="collapse" id="collapseList2">
       <table class="table table-striped table-hover table-condensed table-responsive"> <!-- Other options: table-bordered, table-condensed -->
@@ -569,7 +575,7 @@
   </div><!-- /.well row -->
 
   <div style="text-align:right"><span class="badge"><a href="#top" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Return to top"><span style="color: #FFFFFF"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></span></a></span></div>
-    </font><!-- /.container-font -->
+    <!-- //obsolete element// </font> --><!-- /.container-font -->
   </div><!-- /.panel-body -->
  </div><!-- /.panel-default -->
 </div><!-- /.container -->
@@ -586,14 +592,14 @@
 -->
 
 <footer>
-<div class="container-fluid">
-    <font face="tahoma" size="2">
-    <span style="color:#FFFFFF">
+<div class="container-fluid" style="font-size:93%; color:white; font-family:tahoma">
+    <!-- //obsolete element// <font face="tahoma" size="2"> -->
+    <!-- //remove element// <span style="color:#FFFFFF"> -->
     <p class="heading">
         Copyright <font size="1"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span></font> 2015, Please note that this project is not affiliated with RCS&amp;RDS Romania<br> View project on <a href="https://github.com/rcs-rds/speedtest"><span style="color:#000000">GitHub</span></a><br>
     </p>
-    </span>
-    </font><!-- /.footer-container-font-size -->
+    <!-- //remove element// </span> -->
+    <!-- //obsolete element// </font> --><!-- /.footer-container-font-size -->
 </div><!-- /.container-fluid -->
 
 
