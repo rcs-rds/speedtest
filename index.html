@@ -39,6 +39,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Optional Bootstrap Theme -->
+    <!-- <link href="data:text/css;charset=utf-8," data-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
+    <link href="data:text/css;charset=utf-8," data-href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,6 +59,7 @@
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/examples/theme/theme.css"> -->
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/examples/navbar/navbar.css"> -->
     <link rel="stylesheet" href="css/custom/custom.css">
+    <link rel="stylesheet" href="css/custom/navbar.css">
 
     <!-- Latest compiled and minified JavaScript
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -69,9 +74,11 @@
       td { padding-left:6px; padding-right:6px }
       .fineprint { font-size:75% }
       .heading { text-align:center }
+      /* body { background:#FFFFFF } */
+      html, body { height: 100%; } /* footer background color fix */
     </style>
   </head>
-  <body style="background:#337AB7"> <!-- Colors: blue #337AB7 (orig) or #1E5078 (neowin) and grey #F6F6F6 (orig) or #ECECEC (neowin) -->
+  <body> --> <!-- Colors: style="background:#337AB7" (blue orig) or #1E5078 (neowin) and grey #F6F6F6 (orig) or #ECECEC (neowin) -->
 
 
 
@@ -156,6 +163,12 @@
             <li><div id="_ipv6test_widget" style="width:89%;display:none;text-align:left;margin-left:auto;margin-right:auto">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div><script type="text/javascript" src="http://ipv6-test.com/api/widget.php?domain=referer" async="async"></script></li>
  <!-- IPv6-test.com widget END -->
 
+            <li class="divider"></li>
+            <!-- <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button id="bootstrapOptionalTheme" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> Bootstrap theme</button></div></li> -->
+            <!-- //alternative// <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button id="materialDesignTheme" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Material theme</button></div></li> -->
+            <!-- <li><a href="#" onclick="return false" class="bs-docs-theme-toggle" role="button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Preview theme</a></li> -->
+            <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button class="btn btn-primary btn-success bs-docs-theme-toggle"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Material theme <span class="label label-default">New!</span></button></div></li>
+            <!-- <li><a href="#" onclick="return false" class="bs-docs-theme-toggle" role="button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Material theme</a></li> -->
             <li class="divider"></li>
             <li><!-- <a href="#" onclick="window.location.reload(true); return false;"> --><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button type="button" class="btn btn-primary btn-success" onClick="window.location.reload(true)" data-loading-text="Reloading"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reload page</button></div><!-- </a> --></li>
           </ul>
@@ -420,8 +433,8 @@
 </div><!-- /.modal -->
 
 
-<div class="container" style="font-size:92.7%; color:inherit; font-family:tahoma"> <!-- Options: container or container-fluid; font-size: 0.92em or 92%/92.7%/93% or 12.9px -->
- <div class="panel panel-default">
+<div class="container" style="font-size:92.7%; color:inherit; font-family:tahoma"> <!-- Options: class="container" or container-fluid; font-size: 0.92em or 92%/92.7%/93% or 12.9px Other: max-width:95%;text-align:left;margin-left:auto;margin-right:auto -->
+ <!-- <div class="panel panel-default"> --> <!-- show/hide container border -->
   <div class="panel-body">
     <!-- //obsolete element// <font size="2" face="tahoma"> -->
     <!-- //remove// <span style="color:#2F2F2F"> -->
@@ -441,7 +454,7 @@
     <!-- <p></p> -->
 
 
-  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 80% 83% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -716,7 +729,7 @@
       <hr>
 
 
-  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 80% 83% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -952,7 +965,7 @@
       <hr>
 
 
-  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 80% 83% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:83%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -1030,7 +1043,7 @@
   <div style="text-align:right"><span class="badge"><a href="#top" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Return to top"><span style="color: #FFFFFF"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></span></a></span></div>
     <!-- //obsolete element// </font> --><!-- /.container-font -->
   </div><!-- /.panel-body -->
- </div><!-- /.panel-default -->
+ <!-- </div> --><!-- /.panel-default -->
 </div><!-- /.container -->
 
  <!-- Google AdSense // disabled
@@ -1045,7 +1058,8 @@
 -->
 
 <footer>
-<div class="container-fluid" style="font-size:93%; color:white; font-family:tahoma">
+<div class="container-fluid" style="font-size:93%; color:white; font-family:tahoma; background:#337AB7">
+  <br>
     <!-- //obsolete element// <font face="tahoma" size="2"> -->
     <!-- //remove element// <span style="color:#FFFFFF"> -->
     <p class="heading">
@@ -1053,6 +1067,7 @@
     </p>
     <!-- //remove element// </span> -->
     <!-- //obsolete element// </font> --><!-- /.footer-container-font-size -->
+  <br>
 </div><!-- /.container-fluid -->
 
 
@@ -1102,6 +1117,53 @@ $('button[data-loading-text]')
 });
 </script>
 
+<!-- Optional theme switcher -->
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#materialDesignTheme").click(function () {
+        $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css" type="text/css" />');
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#bootstrapOptionalTheme").click(function () {
+        $('head').append('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" type="text/css" />');
+    });
+});
+</script>
+
+<!-- Optional theme switcher hookup
+<script type="text/javascript">
+$('a').click(function () {
+    $.stylesheets.clear().add($(this).attr('rel'));
+    return false;
+});
+</script> -->
+<!-- Optional theme switcher plugin
+<script type="text/javascript">
+$.stylesheets = (function () {
+    var stylesheets,
+        add,
+        clear;
+
+    add = function (cssfile) {
+        $('head').append('<link href="' + css/bootstrap.min.css + '" rel="stylesheet" />');
+        return stylesheets;
+    };
+
+    clear = function () {
+        $('head link[rel=stylesheet]').remove();
+        return stylesheets;
+    };
+
+    return stylesheets = {
+        add: add,
+        clear: clear
+    };
+} ());
+</script> -->
+
 <!-- IPv6-test.com widget script BEGIN -->
 <script type="text/javascript">var _ipv6test_widget_style = {
 border: "solid 1px #//000//",
@@ -1130,6 +1192,8 @@ stats_background_color: "#666"
     <!-- //snowing script stopped, enough is enough, no more snow// <script type="text/javascript" src="js/snow/snow.js"></script> -->
     <!-- //easter script stopped// <script type="text/javascript" src="js/snow/snow-easter.js"></script> -->
 
+    <script src="js/themes/bootstrap-material-theme_docs.min.js"></script>
+    <!-- <script src="js/themes/bootstrap-preview-theme_docs.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
