@@ -1,0 +1,90 @@
+.navbar-default {
+  background-color:#337AB7;
+  border-color: #2d6ba0;  /* Options: #306fa6; #2d6ba0; change navbar background color*/
+}
+
+.navbar-default .navbar-brand {
+  color: #dce7f1; /*change navbar brand active text color*/
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff; /*change color of navbar brand link*/
+}
+
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #dce7f1; /*change navbar active text color*/
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff; /*change color of navbar links*/
+  background-color: #3985c7; /* Options: #3985c7; #2d6ba0; change navbar background color*/
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff; /*change background color for active tab*/
+  background-color: #3985c7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff; /*change toggle active icon color*/
+  background-color: #3985c7;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #2d6ba0; /*change border color of mobile toggle icon*/
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #3985c7; /*change mobile toggle icon color*/
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #dce7f1; /*change mobile toggle active icon color*/
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #dce7f1;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #dce7f1; /* dce7f1 change color of active text in dropdown*/
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff; /* ffffff change color of links in dropdown*/
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #dce7f1;
+    background-color: #2d6ba0;
+  }
+}
+
+/*! disabled
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #337AB7; /*change dropdown background color
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #dbeeff; /*change dropdown select color
+  background-color: #3985c7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #9b59b6;
+}
+*/
