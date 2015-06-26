@@ -21,7 +21,7 @@
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff; /*change color of navbar links*/
-  background-color: #3985c7; /* Options: #3985c7; #2d6ba0; change navbar background color*/
+  background-color: transparent; /* Options: #3985c7 (light blue); #2d6ba0 (dark blue); change navbar links background color*/
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -33,18 +33,19 @@
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff; /*change toggle active icon color*/
-  background-color: #3985c7;
+  background-color: transparent; /* Options: #3985c7 (light blue); toggle active icon background color*/
 }
 
 .navbar-default .navbar-toggle {
   border-color: #2d6ba0; /*change border color of mobile toggle icon*/
+  background-color: transparent; /*change background color of mobile toggle icon*/
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #3985c7; /*change mobile toggle icon color*/
+  background-color: transparent; /*  Options: #3985c7 (light blue); change mobile toggle active icon background color*/
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #dce7f1; /*change mobile toggle active icon color*/
+  background-color: #dce7f1; /*change mobile toggle icon color*/
 }
 
 .navbar-default .navbar-collapse,
