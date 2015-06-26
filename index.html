@@ -78,6 +78,22 @@
       /* html, body { height: 100%; } */ /* footer background color fix */
       /* .container { background: transparent } */
     </style>
+
+    <!-- Floating back to top button -->
+    <style type="text/css">
+      .back-to-top {
+     position: fixed;
+     bottom: 5em;
+     right: 40px;
+     text-decoration: none;
+     color: #000000;
+     background-color: rgba(235, 235, 235, 0.80);
+     font-size: 12px;
+     padding: 1em;
+     display: none;
+     border-radius: 25px; }
+      .back-to-top:hover { background-color: rgba(135, 135, 135, 0.50); }
+    </style>
   </head>
   <body> <!-- Colors: style="background:#337AB7" (blue orig) or #1E5078 (neowin) and grey #F6F6F6 (orig) or #ECECEC (neowin) -->
 
@@ -527,7 +543,7 @@
     <!-- <p></p> -->
 
 
-  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 84% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px, best fit: 84% or 91% (material) -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -844,7 +860,7 @@
       <hr style="width:84%">
 
 
-  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 84% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px, best fit: 84% or 91% (material) -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -1091,7 +1107,7 @@
       <hr style="width:84%">
 
 
-  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 84% 93% 482px 550px 580px 640px -->
+  <div class="well row" style="width:84%;display:inherit;text-align:left;margin-left:auto;margin-right:auto"> <!-- Width values: 70% 79% 80% 83% 93% 482px 550px 580px 640px, best fit: 84% or 91% (material) -->
    <!-- //inactive image//
    <span class="text-primary"><span class="glyphicon glyphicon-dashboard" aria-hidden="true" style="vertical-align:bottom"></span></span>
    -->
@@ -1166,7 +1182,8 @@
       </table>
   </div><!-- /.well row -->
 
-  <div style="text-align:right"><span class="badge"><a href="#top" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Return to top"><span style="color: #FFFFFF"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></span></a></span></div>
+  <!-- <div style="text-align:right"><span class="badge"><a href="#top" id="animate" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Return to top &uarr;"><span style="color: #FFFFFF"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></span></a></span></div> -->
+  <a href="#" class="back-to-top"><span style="color: #000000"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span></a>
     <!-- //obsolete element// </font> --><!-- /.container-font -->
   </div><!-- /.panel-body -->
  <!-- </div> --><!-- /.panel-default -->
@@ -1240,6 +1257,32 @@ $('button[data-loading-text]')
         setTimeout(function () {
             btn.button('reset')
         }, 1000)
+});
+</script>
+
+<script type="text/javascript">
+$('#animate').click(function(){
+  $("html, body").animate({ scrollTop: 0 },{duration: 500, queue: false}); return false;
+});
+</script>
+<!-- Floating back to top button script -->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
 });
 </script>
 
