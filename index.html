@@ -416,6 +416,30 @@
 
 
 <!-- Modal -->
+<div class="modal fade" id="ModalTelekomB" tabindex="-1" role="dialog" aria-labelledby="ModalTelekomBLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:675px"> <!-- Extra options: modal-sm modal-lg -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalTelekomBLabel">Speedtest Telekom Bucuresti</h4>
+      </div>
+      <div class="modal-body">
+
+        <div style="width:100%;display:inherit;text-align:center;margin-left:auto;margin-right:auto">
+          <iframe src="http://speed.telekom.ro/" style="border:none" width="651" height="486"></iframe>
+        </div>
+
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <!-- <a href="#" onclick="window.location.reload(true); return false;"> --> <button type="button" class="btn btn-danger" onClick="window.location.reload()" data-loading-text="Stopping"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Stop</button> <!-- </a> -->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal -->
 <div class="modal fade" id="ModalVodafoneB" tabindex="-1" role="dialog" aria-labelledby="ModalVodafoneBLabel" aria-hidden="true">
   <div class="modal-dialog" style="width:675px"> <!-- Extra options: modal-sm modal-lg -->
     <div class="modal-content">
@@ -425,9 +449,9 @@
       </div>
       <div class="modal-body">
 
-        <div style="width:100%;display:inherit;text-align:center;margin-left:auto;margin-right:auto">
+        <!-- <div style="width:100%;display:inherit;text-align:center;margin-left:auto;margin-right:auto">
           <iframe src="https://speedtest.vodafone.ro/" style="border:none" width="651" height="486"></iframe>
-        </div>
+        </div> -->
 
       </div><!-- /.modal-body -->
       <div class="modal-footer">
@@ -697,12 +721,26 @@
           </tr>
           <tr>
             <td class="hidden-xs"><strong>Bucuresti</strong></td>
+            <td><span style="color: #ec0893">Telekom Romania</span></td>
+            <td class="hidden-xs">IPv4</td>
+            <td><a>speed.telekom.ro</a></td>
+            <td>          
+              <a href="http://speed.telekom.ro/" target="_blank" class="btn btn-primary btn-xs hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Start</a>
+              <a href="#" data-toggle="modal" data-target="#ModalTelekomB" class="btn btn-primary btn-xs hidden-xs"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> Start</a>
+              <a href="http://speed.romtelecom.net/" target="_blank" class="btn btn-success btn-xs hidden-xs">Mirror</a>
+            </td>
+            <td class="hidden-xs hidden-sm">
+              <a href="http://currentlydown.com/speedtest.telekom.ro" target="_blank" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Check</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden-xs"><strong>Bucuresti</strong></td>
             <td><span style="color: #e60000">Vodafone Romania</span></td>
             <td class="hidden-xs">IPv4</td>
             <td><a>speedtest.vodafone.ro</a></td>
             <td>          
-              <a href="https://speedtest.vodafone.ro/" target="_blank" class="btn btn-primary btn-xs hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Start</a>
-              <a href="#" data-toggle="modal" data-target="#ModalVodafoneB" class="btn btn-primary btn-xs hidden-xs"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> Start</a>
+              <a href="https://speedtest.vodafone.ro/" target="_blank" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Start</a>
+              <!-- <a href="#" data-toggle="modal" data-target="#ModalVodafoneB" class="btn btn-primary btn-xs hidden-xs"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> Start</a> -->
               <a href="https://www.vodafone.ro/personal/servicii-si-tarife/internet/internet-pe-laptop-sau-tableta/test-de-viteza/" target="_blank" class="btn btn-success btn-xs hidden-xs">Mirror</a>
             </td>
             <td class="hidden-xs hidden-sm">
