@@ -40,29 +40,29 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Optional Bootstrap Theme -->
-    <!-- <link href="data:text/css;charset=utf-8," data-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
-    <link href="data:text/css;charset=utf-8," data-href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+    <!-- <link href="data:text/css;charset=utf-8," data-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
+    <!-- <link href="data:text/css;charset=utf-8," data-href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- Latest compiled and minified CSS
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <![endif]-->
 
     <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/examples/theme/theme.css"> -->
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/examples/navbar/navbar.css"> -->
     <link rel="stylesheet" href="css/custom/custom.css">
     <link rel="stylesheet" href="css/custom/navbar.css">
 
     <!-- Latest compiled and minified JavaScript
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <![endif]-->
 
 
@@ -209,11 +209,11 @@
             <li><div id="_ipv6test_widget" style="width:89%;display:none;text-align:left;margin-left:auto;margin-right:auto">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div><script type="text/javascript" src="http://ipv6-test.com/api/widget.php?domain=referer" async="async"></script></li>
  <!-- IPv6-test.com widget END -->
 
-            <li class="divider"></li>
+            <li class="divider hidden"></li>
             <!-- <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button id="bootstrapOptionalTheme" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> Bootstrap theme</button></div></li> -->
             <!-- //alternative// <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button id="materialDesignTheme" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Material theme</button></div></li> -->
             <!-- <li><a href="#" onclick="return false" class="bs-docs-theme-toggle" role="button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Preview theme</a></li> -->
-            <li><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button class="btn btn-primary btn-success bs-docs-theme-toggle"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Enable material theme</button></div></li>
+            <li class="hidden"><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button class="btn btn-primary btn-success bs-docs-theme-toggle"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Enable material theme</button></div></li>
             <!-- <li><a href="#" onclick="return false" class="bs-docs-theme-toggle" role="button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Material theme</a></li> -->
             <!-- <li class="divider"></li> -->
             <li class="hidden"><!-- <a href="#" onclick="window.location.reload(true); return false;"> --><div style="text-align:left;margin-left:6%;margin-right:auto;margin-bottom:1%;margin-top:0%"><button type="button" class="btn btn-primary btn-danger" onClick="window.location.reload(true)" data-loading-text="Reloading"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reload page</button></div><!-- </a> --></li>
@@ -1532,7 +1532,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
 	<!-- Google Analytics -->
@@ -1591,7 +1591,7 @@ jQuery(document).ready(function() {
 });
 </script>
 
-<!-- Optional theme switcher -->
+<!-- Optional theme switcher
 <script type="text/javascript">
 $(document).ready(function () {
     $("#materialDesignTheme").click(function () {
@@ -1602,10 +1602,10 @@ $(document).ready(function () {
 <script type="text/javascript">
 $(document).ready(function () {
     $("#bootstrapOptionalTheme").click(function () {
-        $('head').append('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" type="text/css" />');
     });
 });
-</script>
+</script> -->
 
 <!-- Optional theme switcher hookup
 <script type="text/javascript">
@@ -1667,7 +1667,7 @@ stats_background_color: "#666"
     <!-- //easter script stopped// <script type="text/javascript" src="js/snow/snow-easter.js"></script> -->
 
     <SCRIPT src="js/trafic/trafic.js" type="text/javascript"></SCRIPT>
-    <script src="js/themes/bootstrap-material-theme_docs.min.js"></script>
+    <!-- <script src="js/themes/bootstrap-material-theme_docs.min.js"></script> -->
     <!-- <script src="js/themes/bootstrap-preview-theme_docs.min.js"></script> -->
     <!-- <script src="http://getbootstrap.com/assets/js/docs.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
