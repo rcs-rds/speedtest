@@ -1707,6 +1707,28 @@ $('button[data-loading-text]')
 });
 </script>
 
+<!-- <script type="text/javascript">
+/* Javascript to link directly to an open modal window with Bootstrap. */
+
+$(document).ready(function() {
+  if(window.location.href.indexOf('#ModalResetareTrafic') != -1) {
+    $('#ModalResetareTrafic').modal('show');
+  }
+});
+
+/* Access via http://rcs-rds.github.io/#ModalResetareTrafic to load the page with the modal open */
+</script> -->
+
+<script type="text/javascript">
+/* Javascript to link directly to open modals with Bootstrap. */
+$(document).ready(function() {  
+  var modals = ['#ModalResetareTrafic', '#ModalDigiTM', '#ModalDigiOR', '#ModalDigiB', '#ModalDigiIS', '#ModalDigiHU', '#ModalUPCB', '#ModalNextGenB', '#ModalTelekomB', '#ModalVodafoneB', '#ModalOrangeB', '#ModalOrangeMD', '#ModalZiggoNL', '#ModalZiggoNL6'];
+  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
+     $(window.location.hash).modal();
+  }
+})
+</script>
+
 <!-- Back to top button script with smooth scrolling animation -->
 <script type="text/javascript">
 $('#animate').click(function(){
